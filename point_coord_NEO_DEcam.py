@@ -1,10 +1,11 @@
 #!/usr/bin/env python
-from pylab import *
+#from pylab import *
 import getopt
-import os
+#import os
 import sys
 import numpy
 
+import trans_coord
 from trans_coord import *
 
 DTOR = numpy.pi/180
