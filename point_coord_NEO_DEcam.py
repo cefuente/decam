@@ -22,6 +22,8 @@ direction = 1 # go from south to north, middle field is a bit north,
 sub_ra = 3 # number of sub_shifts in ra and dec for the sub_cadence
 sub_dec= 3 # this one should not be changed
 
+npasses= 4 # number of times the observing stamp is repeated
+
 # Script that outputs sub_ra x sub_dec field position for optimal coverage using
 # DECam@blanco given a cadence center (default 0,0) the cadence starts
 # at the south west corner. It moves north and then east, south, east,
@@ -30,7 +32,7 @@ sub_dec= 3 # this one should not be changed
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec='])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses='])
 except:
     sys.exit(2)
 for o, a in opts:
@@ -61,6 +63,8 @@ for o, a in opts:
         sub_ra=int(a)
     if o in ['--sub_dec']: # number of dec shifts... right now has to be 3.
         sub_dec=int(a)
+    if o in ['--npasses']:
+        npasses=a
 
 
 ### CHECK THESE NUMBERS
@@ -125,7 +129,7 @@ piece = """ {
 out_l = []
 # add 30 sec donut corrector
 #out_l.append(piece%("comm", "n%df%d-DONUT"%(night,fields[0,0]), dra[0,0], ddec[0,0], 30))
-for k in range(4):
+for k in range(npasses):
     for i in range(sub_dec):
         for j in range(sub_ra):
             # add relevant info
