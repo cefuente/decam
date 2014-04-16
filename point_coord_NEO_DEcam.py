@@ -64,7 +64,7 @@ for o, a in opts:
     if o in ['--sub_dec']: # number of dec shifts... right now has to be 3.
         sub_dec=int(a)
     if o in ['--npasses']:
-        npasses=a
+        npasses=int(a)
 
 
 ### CHECK THESE NUMBERS
@@ -134,7 +134,7 @@ for k in range(npasses):
         for j in range(sub_ra):
             # add relevant info
             out_l.append(piece%("comm", "n%df%d"%(night,fields[i,j]), dra[i,j], ddec[i,j], 60))
-            if k%4==0: # output for xephem visualization
+            if k%npasses==0: # output for xephem visualization
                 print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
 out = "["+','.join(out_l)+"]" # open and close the script
 f=open(fname,'w'); f.write(out); f.close();
