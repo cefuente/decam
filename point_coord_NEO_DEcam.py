@@ -23,6 +23,8 @@ sub_ra = 3 # number of sub_shifts in ra and dec for the sub_cadence
 sub_dec= 3 # this one should not be changed
 
 npasses= 4 # number of times the observing stamp is repeated
+exptime= 60 # exposure time in seconds
+filter='r' # filter selection
 
 # Script that outputs sub_ra x sub_dec field position for optimal coverage using
 # DECam@blanco given a cadence center (default 0,0) the cadence starts
@@ -32,7 +34,7 @@ npasses= 4 # number of times the observing stamp is repeated
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses='])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter='])
 except:
     sys.exit(2)
 for o, a in opts:
@@ -65,6 +67,10 @@ for o, a in opts:
         sub_dec=int(a)
     if o in ['--npasses']:
         npasses=int(a)
+    if o in ['--exptime']:
+        exptime=int(a)
+    if o in ['--filter']:
+        filter=a
 
 
 ### CHECK THESE NUMBERS
@@ -107,6 +113,10 @@ lon2ra  = numpy.vectorize(lon2ra_s)
 dra = lon2ra(shifts_ra)
 ddec = lat2dec(shifts_dec)
 
+# order of coverage is SE -> NW
+# change to NE -> SW
+#ddec = ddec[::-1]
+
 #fig = plt.figure()
 #ax = fig.add_subplot(111)
 #ax.plot(shifts_ra,shifts_dec,'bo')
@@ -119,7 +129,7 @@ piece = """ {
   \"seqnum\": 1, 
   \"expType\": \"object\", 
   \"object\": \"%s\", 
-  \"filter\": \"r\", 
+  \"filter\": \"%s\", 
   \"RA\": \"%s\", 
   \"dec\": \"%s\", 
   \"expTime\": %d
@@ -133,7 +143,7 @@ for k in range(npasses):
     for i in range(sub_dec):
         for j in range(sub_ra):
             # add relevant info
-            out_l.append(piece%("comm", "n%df%d"%(night,fields[i,j]), dra[i,j], ddec[i,j], 60))
+            out_l.append(piece%("comm", "n%df%d"%(night,fields[i,j]), filter, dra[i,j], ddec[i,j], exptime))
             if k%npasses==0: # output for xephem visualization
                 print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
 out = "["+','.join(out_l)+"]" # open and close the script
