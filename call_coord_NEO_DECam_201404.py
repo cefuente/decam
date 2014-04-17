@@ -37,7 +37,7 @@ npasses= 5 # number of times the observing stamp is repeated
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=','len_ra=','len_dec=','exptime=','filter=','npasses='])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=','len_ra=','len_dec=','exptime=','filter=','npasses=','utcinit='])
 except:
     sys.exit(2)
 for o, a in opts:
@@ -80,8 +80,10 @@ for o, a in opts:
         filter=a
     if o in ['--npasses']:
         npasses=int(a)
+    if o in ['--utcinit']:
+        utcinit=a
 
-print 'night',night
+print '# night',night
 
 ### CHECK THESE NUMBERS
 step_dec = 1.84 #  12[ccd]*2048[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
@@ -95,6 +97,15 @@ decs = reshape(array(list(decs) *len_dec), (len_dec,-1))
 decs = decs.T # flip so that we don't get just the diagonal
 decs  += numpy.ones(numpy.shape(decs))*decC# Add zeropoint
 
+## FIX THIS
+#ras = (array(range(len_ra)) - len_ra/4.)*step_ra*2 # remember these will be 2x2 chuncks
+#ras = reshape(array(list(ras) *len_dec), (len_ra,-1))
+#decs = (array(range(len_dec))  - len_dec/4.)*step_dec*2 # remember these will be 2x2 chuncks
+#decs = reshape(array(list(decs) *len_dec), (len_ra,-1))
+#decs = decs.T # flip so that we don't get just the diagonal
+#decs  += numpy.ones(numpy.shape(decs))*decC# Add zeropoint
+
+
 
 # Order of quadrants is SE -> NW
 # Try to change quadrants to get NE -> SW
@@ -106,9 +117,9 @@ ras /= numpy.cos(decs*DTOR) # make sure the delta_ra accounts for sky curvature
 ras += numpy.ones(numpy.shape(ras))*raC # Add zeropoint
 
 
+#print ras
+#print decs
 
-print ras
-print decs
 
 #plot(ras,decs,'bo')
 #show()
@@ -126,6 +137,5 @@ for i in range(len_ra):
         util = 'python point_coord_NEO_DECam.py --raC %f --decC %f --initfield %d --night %d --fname neo_n%dq%d.json --direction %s --sub_ra 2 --sub_dec 2 --exptime %d --filter %s --npasses %d'%(ras[i][j], decs[i][j], initfield, night, night,q, direction, exptime, filter, npasses)
         os.system(util)
 
-
-
+os.system('')
 

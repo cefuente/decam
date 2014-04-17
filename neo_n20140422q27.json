@@ -1,0 +1,221 @@
+[ {
+  "comment": "Field:105 , imname:N20140422F105V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F105V1", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-05:56:09", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:106 , imname:N20140422F106V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F106V1", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-07:54:33", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:107 , imname:N20140422F107V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F107V1", 
+  "filter": "VR", 
+  "RA": "14:36:17", 
+  "dec": "-08:53:45", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:108 , imname:N20140422F108V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F108V1", 
+  "filter": "VR", 
+  "RA": "14:36:16", 
+  "dec": "-06:55:21", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:105 , imname:N20140422F105V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F105V2", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-05:56:09", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:106 , imname:N20140422F106V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F106V2", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-07:54:33", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:107 , imname:N20140422F107V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F107V2", 
+  "filter": "VR", 
+  "RA": "14:36:17", 
+  "dec": "-08:53:45", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:108 , imname:N20140422F108V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F108V2", 
+  "filter": "VR", 
+  "RA": "14:36:16", 
+  "dec": "-06:55:21", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:105 , imname:N20140422F105V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F105V3", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-05:56:09", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:106 , imname:N20140422F106V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F106V3", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-07:54:33", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:107 , imname:N20140422F107V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F107V3", 
+  "filter": "VR", 
+  "RA": "14:36:17", 
+  "dec": "-08:53:45", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:108 , imname:N20140422F108V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F108V3", 
+  "filter": "VR", 
+  "RA": "14:36:16", 
+  "dec": "-06:55:21", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:105 , imname:N20140422F105V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F105V4", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-05:56:09", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:106 , imname:N20140422F106V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F106V4", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-07:54:33", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:107 , imname:N20140422F107V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F107V4", 
+  "filter": "VR", 
+  "RA": "14:36:17", 
+  "dec": "-08:53:45", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:108 , imname:N20140422F108V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F108V4", 
+  "filter": "VR", 
+  "RA": "14:36:16", 
+  "dec": "-06:55:21", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:105 , imname:N20140422F105V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F105V5", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-05:56:09", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:106 , imname:N20140422F106V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F106V5", 
+  "filter": "VR", 
+  "RA": "14:29:50", 
+  "dec": "-07:54:33", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:107 , imname:N20140422F107V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F107V5", 
+  "filter": "VR", 
+  "RA": "14:36:17", 
+  "dec": "-08:53:45", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field:108 , imname:N20140422F108V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "N20140422F108V5", 
+  "filter": "VR", 
+  "RA": "14:36:16", 
+  "dec": "-06:55:21", 
+  "expTime": 40
+ }
+]

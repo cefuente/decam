@@ -1,0 +1,221 @@
+[ {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f17", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-04:10:5", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f18", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-05:60:3", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f19", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-06:55:2", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f20", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-05:05:4", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f17", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-04:10:5", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f18", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-05:60:3", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f19", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-06:55:2", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f20", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-05:05:4", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f17", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-04:10:5", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f18", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-05:60:3", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f19", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-06:55:2", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f20", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-05:05:4", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f17", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-04:10:5", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f18", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-05:60:3", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f19", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-06:55:2", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f20", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-05:05:4", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f17", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-04:10:5", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f18", 
+  "filter": "VR", 
+  "RA": "13:59:09", 
+  "dec": "-05:60:3", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f19", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-06:55:2", 
+  "expTime": 40
+ }
+, {
+  "comment": "comm",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "n200f20", 
+  "filter": "VR", 
+  "RA": "14:05:18", 
+  "dec": "-05:05:4", 
+  "expTime": 40
+ }
+]

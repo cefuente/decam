@@ -1,221 +1,221 @@
 [ {
-  "comment": "comm",
+  "comment": "Field:57 , imname:N20140422F57V1 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f57", 
+  "object": "N20140422F57V1", 
   "filter": "VR", 
-  "RA": "14:24:10", 
-  "dec": "-11:31:2", 
+  "RA": "14:08:30", 
+  "dec": "-16:04:57", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:58 , imname:N20140422F58V1 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f58", 
+  "object": "N20140422F58V1", 
   "filter": "VR", 
-  "RA": "14:24:09", 
-  "dec": "-13:22:5", 
+  "RA": "14:08:28", 
+  "dec": "-18:01:21", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:59 , imname:N20140422F59V1 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f59", 
+  "object": "N20140422F59V1", 
   "filter": "VR", 
-  "RA": "14:30:27", 
-  "dec": "-14:17:4", 
+  "RA": "14:15:12", 
+  "dec": "-18:60:33", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:60 , imname:N20140422F60V1 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f60", 
+  "object": "N20140422F60V1", 
   "filter": "VR", 
-  "RA": "14:30:26", 
-  "dec": "-12:26:0", 
+  "RA": "14:15:10", 
+  "dec": "-17:02:09", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:57 , imname:N20140422F57V2 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f57", 
+  "object": "N20140422F57V2", 
   "filter": "VR", 
-  "RA": "14:24:10", 
-  "dec": "-11:31:2", 
+  "RA": "14:08:30", 
+  "dec": "-16:04:57", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:58 , imname:N20140422F58V2 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f58", 
+  "object": "N20140422F58V2", 
   "filter": "VR", 
-  "RA": "14:24:09", 
-  "dec": "-13:22:5", 
+  "RA": "14:08:28", 
+  "dec": "-18:01:21", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:59 , imname:N20140422F59V2 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f59", 
+  "object": "N20140422F59V2", 
   "filter": "VR", 
-  "RA": "14:30:27", 
-  "dec": "-14:17:4", 
+  "RA": "14:15:12", 
+  "dec": "-18:60:33", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:60 , imname:N20140422F60V2 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f60", 
+  "object": "N20140422F60V2", 
   "filter": "VR", 
-  "RA": "14:30:26", 
-  "dec": "-12:26:0", 
+  "RA": "14:15:10", 
+  "dec": "-17:02:09", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:57 , imname:N20140422F57V3 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f57", 
+  "object": "N20140422F57V3", 
   "filter": "VR", 
-  "RA": "14:24:10", 
-  "dec": "-11:31:2", 
+  "RA": "14:08:30", 
+  "dec": "-16:04:57", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:58 , imname:N20140422F58V3 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f58", 
+  "object": "N20140422F58V3", 
   "filter": "VR", 
-  "RA": "14:24:09", 
-  "dec": "-13:22:5", 
+  "RA": "14:08:28", 
+  "dec": "-18:01:21", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:59 , imname:N20140422F59V3 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f59", 
+  "object": "N20140422F59V3", 
   "filter": "VR", 
-  "RA": "14:30:27", 
-  "dec": "-14:17:4", 
+  "RA": "14:15:12", 
+  "dec": "-18:60:33", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:60 , imname:N20140422F60V3 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f60", 
+  "object": "N20140422F60V3", 
   "filter": "VR", 
-  "RA": "14:30:26", 
-  "dec": "-12:26:0", 
+  "RA": "14:15:10", 
+  "dec": "-17:02:09", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:57 , imname:N20140422F57V4 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f57", 
+  "object": "N20140422F57V4", 
   "filter": "VR", 
-  "RA": "14:24:10", 
-  "dec": "-11:31:2", 
+  "RA": "14:08:30", 
+  "dec": "-16:04:57", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:58 , imname:N20140422F58V4 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f58", 
+  "object": "N20140422F58V4", 
   "filter": "VR", 
-  "RA": "14:24:09", 
-  "dec": "-13:22:5", 
+  "RA": "14:08:28", 
+  "dec": "-18:01:21", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:59 , imname:N20140422F59V4 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f59", 
+  "object": "N20140422F59V4", 
   "filter": "VR", 
-  "RA": "14:30:27", 
-  "dec": "-14:17:4", 
+  "RA": "14:15:12", 
+  "dec": "-18:60:33", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:60 , imname:N20140422F60V4 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f60", 
+  "object": "N20140422F60V4", 
   "filter": "VR", 
-  "RA": "14:30:26", 
-  "dec": "-12:26:0", 
+  "RA": "14:15:10", 
+  "dec": "-17:02:09", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:57 , imname:N20140422F57V5 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f57", 
+  "object": "N20140422F57V5", 
   "filter": "VR", 
-  "RA": "14:24:10", 
-  "dec": "-11:31:2", 
+  "RA": "14:08:30", 
+  "dec": "-16:04:57", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:58 , imname:N20140422F58V5 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f58", 
+  "object": "N20140422F58V5", 
   "filter": "VR", 
-  "RA": "14:24:09", 
-  "dec": "-13:22:5", 
+  "RA": "14:08:28", 
+  "dec": "-18:01:21", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:59 , imname:N20140422F59V5 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f59", 
+  "object": "N20140422F59V5", 
   "filter": "VR", 
-  "RA": "14:30:27", 
-  "dec": "-14:17:4", 
+  "RA": "14:15:12", 
+  "dec": "-18:60:33", 
   "expTime": 40
  }
 , {
-  "comment": "comm",
+  "comment": "Field:60 , imname:N20140422F60V5 ",
   "seqtot": 1, 
   "seqnum": 1, 
   "expType": "object", 
-  "object": "n20140422f60", 
+  "object": "N20140422F60V5", 
   "filter": "VR", 
-  "RA": "14:30:26", 
-  "dec": "-12:26:0", 
+  "RA": "14:15:10", 
+  "dec": "-17:02:09", 
   "expTime": 40
  }
 ]

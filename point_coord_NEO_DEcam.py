@@ -8,6 +8,7 @@ import numpy
 import trans_coord
 from trans_coord import *
 
+
 DTOR = numpy.pi/180
 
 # Defaults
@@ -73,9 +74,12 @@ for o, a in opts:
         filter=a
 
 
-### CHECK THESE NUMBERS
-step_dec = 1.84 #  12[ccd]*2048[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
-step_ra  = 1.53 #  5[ccd]*4096[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
+### DAVID H, added gaps to the step size
+#step_ra  = 1.53 #  5[ccd]*4096[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
+#step_dec = 1.84 #  12[ccd]*2048[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
+
+step_ra  = 1.596 # (5[ccd]*4096[pix/ccd]+4[gaps]*201[pix/gap])*0.27[arcsec/pix]/3600[arcsec/deg]
+step_dec = 1.96  # (12[ccd]*2048[pix/ccd]+10[gaps]*153)*0.27[arcsec/pix]/3600[arcsec/deg]
 
 if sub_ra == 3:
     if direction == 1: # north to south
@@ -136,6 +140,8 @@ piece = """ {
  }
 """
 
+fobs = open('N%d_F%03d_obsplan.txt'%(night,initfield),'w')
+fobs.write("imname\tRA\tDEC\tEXPTIME\n")
 out_l = []
 # add 30 sec donut corrector
 #out_l.append(piece%("comm", "n%df%d-DONUT"%(night,fields[0,0]), dra[0,0], ddec[0,0], 30))
@@ -143,11 +149,19 @@ for k in range(npasses):
     for i in range(sub_dec):
         for j in range(sub_ra):
             # add relevant info
-            out_l.append(piece%("comm", "n%df%d"%(night,fields[i,j]), filter, dra[i,j], ddec[i,j], exptime))
+            imname = "N%dF%dV%d"%(night,fields[i,j],k+1)
+            out_l.append(piece%("Field:%2d , imname:%s "%(fields[i,j],imname), imname, filter, dra[i,j], ddec[i,j], exptime))
+            fobs.write("%s\t%s\t%s\t%d\n"%(imname, dra[i,j], ddec[i,j], exptime))
             if k%npasses==0: # output for xephem visualization
-                print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+                #print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+                print "F%s,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+fobs.write("%s\t%s\t%s\t%d\n"%("SLEW_QX_QY", dra[i,j], ddec[i,j], 60))
 out = "["+','.join(out_l)+"]" # open and close the script
+
+fobs.close()
+
 f=open(fname,'w'); f.write(out); f.close();
+
 
 sys.exit()
 
@@ -157,4 +171,9 @@ xlabel('RA')
 ylabel('Dec')
 show()
 
+
+## the whole airmass construct...
+#import observer
+#obs = observer.Observer('ctio')
+#obs.almanac('2010/01/01')
 
