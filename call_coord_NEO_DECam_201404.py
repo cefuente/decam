@@ -89,10 +89,10 @@ print '# night',night
 step_dec = 1.84 #  12[ccd]*2048[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
 step_ra  = 1.53 #  5[ccd]*4096[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
 
-ras = (array(range(len_ra)) - len_ra/4.)*step_ra*2 # remember these will be 2x2 chuncks
+ras = (array(range(len_ra)) - (len_ra-1)/2.)*step_ra*2 # remember these will be 2x2 chuncks
 ras = reshape(array(list(ras) *len_ra), (len_ra,-1))
 
-decs = (array(range(len_dec))  - len_dec/4.)*step_dec*2 # remember these will be 2x2 chuncks
+decs = (array(range(len_dec))  - (len_dec-1)/2.)*step_dec*2 # remember these will be 2x2 chuncks
 decs = reshape(array(list(decs) *len_dec), (len_dec,-1))
 decs = decs.T # flip so that we don't get just the diagonal
 decs  += numpy.ones(numpy.shape(decs))*decC# Add zeropoint
@@ -134,8 +134,9 @@ for i in range(len_ra):
     for j in range(len_dec):
         initfield = q*sub_ra*sub_dec + 1
         q = q+1
-        util = 'python point_coord_NEO_DECam.py --raC %f --decC %f --initfield %d --night %d --fname neo_n%dq%d.json --direction %s --sub_ra 2 --sub_dec 2 --exptime %d --filter %s --npasses %d'%(ras[i][j], decs[i][j], initfield, night, night,q, direction, exptime, filter, npasses)
+        util = 'python point_coord_NEO_DECam.py --raC %f --decC %f --initfield %d --night %d --quadrant %d --fname neo_n%dq%d.json --direction %s --sub_ra 2 --sub_dec 2 --exptime %d --filter %s --npasses %d'%(ras[i][j], decs[i][j], initfield, night, q, night,q, direction, exptime, filter, npasses)
         os.system(util)
-
+        print "Q%d,f,%s,%.3f,0,2000"%(q,lon2ra_s(ras[i,j]), decs[i,j])
+        #print lon2ra_s(ras[i,j]), decs[i,j]
 os.system('')
 

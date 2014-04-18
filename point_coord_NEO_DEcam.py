@@ -14,6 +14,7 @@ DTOR = numpy.pi/180
 # Defaults
 raC = 0.
 decC = 0.
+quadrant =1 # in general (field-1)/4 + 1
 initfield=1
 night = 1
 fname = "neo_n1.json"
@@ -35,7 +36,7 @@ filter='r' # filter selection
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter='])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant='])
 except:
     sys.exit(2)
 for o, a in opts:
@@ -72,6 +73,8 @@ for o, a in opts:
         exptime=int(a)
     if o in ['--filter']:
         filter=a
+    if o in ['--quadrant']:
+        quadrant=int(a)
 
 
 ### DAVID H, added gaps to the step size
@@ -140,7 +143,7 @@ piece = """ {
  }
 """
 
-fobs = open('N%d_F%03d_obsplan.txt'%(night,initfield),'w')
+fobs = open('N%d_Q%02d_obsplan.txt'%(night,quadrant),'w')
 fobs.write("imname\tRA\tDEC\tEXPTIME\n")
 out_l = []
 # add 30 sec donut corrector
@@ -149,12 +152,12 @@ for k in range(npasses):
     for i in range(sub_dec):
         for j in range(sub_ra):
             # add relevant info
-            imname = "N%dF%dV%d"%(night,fields[i,j],k+1)
+            imname = "N%dQ%dF%dV%d"%(night,quadrant,fields[i,j],k+1)
             out_l.append(piece%("Field:%2d , imname:%s "%(fields[i,j],imname), imname, filter, dra[i,j], ddec[i,j], exptime))
             fobs.write("%s\t%s\t%s\t%d\n"%(imname, dra[i,j], ddec[i,j], exptime))
-            if k%npasses==0: # output for xephem visualization
-                #print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
-                print "F%s,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+            #if k%npasses==0: # output for xephem visualization
+            #    #print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+            #    print "F%s,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
 fobs.write("%s\t%s\t%s\t%d\n"%("SLEW_QX_QY", dra[i,j], ddec[i,j], 60))
 out = "["+','.join(out_l)+"]" # open and close the script
 
