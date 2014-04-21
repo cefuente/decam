@@ -27,6 +27,7 @@ sub_dec= 3 # this one should not be changed
 npasses= 4 # number of times the observing stamp is repeated
 exptime= 60 # exposure time in seconds
 filter='r' # filter selection
+dirout='.' # directory where to output files to
 
 # Script that outputs sub_ra x sub_dec field position for optimal coverage using
 # DECam@blanco given a cadence center (default 0,0) the cadence starts
@@ -36,7 +37,7 @@ filter='r' # filter selection
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant='])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant=', 'dirout='])
 except:
     sys.exit(2)
 for o, a in opts:
@@ -75,6 +76,10 @@ for o, a in opts:
         filter=a
     if o in ['--quadrant']:
         quadrant=int(a)
+    if o in ['--dirout']:
+        dirout=a
+
+fname = dirout+'/'+fname
 
 
 ### DAVID H, added gaps to the step size
@@ -143,7 +148,9 @@ piece = """ {
  }
 """
 
-fobs = open('N%d_Q%02d_obsplan.txt'%(night,quadrant),'w')
+# erase night from the names
+fobs = open('%s/Q%02d_obsplan.txt'%(dirout,quadrant),'w')
+#fobs = open('%s/xN%d_Q%02d_obsplan.txt'%(dirout,night,quadrant),'w')
 fobs.write("imname\tRA\tDEC\tEXPTIME\n")
 out_l = []
 # add 30 sec donut corrector
@@ -151,8 +158,9 @@ out_l = []
 for k in range(npasses):
     for i in range(sub_dec):
         for j in range(sub_ra):
-            # add relevant info
-            imname = "N%dQ%dF%dV%d"%(night,quadrant,fields[i,j],k+1)
+            # add relevant info, erase Night from file names
+            #imname = "N%dQ%dF%dV%d"%(night,quadrant,fields[i,j],k+1)
+            imname = "Q%dF%dV%d"%(quadrant,fields[i,j],k+1)
             out_l.append(piece%("Field:%2d , imname:%s "%(fields[i,j],imname), imname, filter, dra[i,j], ddec[i,j], exptime))
             fobs.write("%s\t%s\t%s\t%d\n"%(imname, dra[i,j], ddec[i,j], exptime))
             #if k%npasses==0: # output for xephem visualization
