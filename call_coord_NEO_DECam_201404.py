@@ -89,8 +89,10 @@ for o, a in opts:
 print '# night',night
 
 ### CHECK THESE NUMBERS
-step_dec = 1.84 #  12[ccd]*2048[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
-step_ra  = 1.53 #  5[ccd]*4096[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
+#step_dec = 1.84 #  12[ccd]*2048[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
+#step_ra  = 1.53 #  5[ccd]*4096[pix/ccd]*0.27[arcsec/pix]/3600[arcsec/deg]
+step_ra  = 1.596 # (5[ccd]*4096[pix/ccd]+4[gaps]*201[pix/gap])*0.27[arcsec/pix]/3600[arcsec/deg]
+step_dec = 1.96  # (12[ccd]*2048[pix/ccd]+10[gaps]*153)*0.27[arcsec/pix]/3600[arcsec/deg]
 
 ras = (array(range(len_ra)) - (len_ra-1)/2.)*step_ra*2 # remember these will be 2x2 chuncks
 ras = reshape(array(list(ras) *len_ra), (len_ra,-1))
