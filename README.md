@@ -13,5 +13,9 @@ python call_coord_NEO_DECam_201404.py --direction south --night 20140422 --raC 1
 
 
 
+For getting the obs_times:
+python NEO_DECam_obs_times.py --utcinit '2014-04-22 23:34:26' obsplan_json_8x8/Q05_obsplan.txt obsplan_json_8x8/Q04_obsplan.txt obsplan_json_8x8/Q03_obsplan.txt obsplan_json_8x8/Q02_obsplan.txt obsplan_json_8x8/Q10_obsplan.txt obsplan_json_8x8/Q11_obsplan.txt obsplan_json_8x8/Q12_obsplan.txt obsplan_json_8x8/Q13_obsplan.txt obsplan_json_8x8/Q21_obsplan.txt obsplan_json_8x8/Q20_obsplan.txt obsplan_json_8x8/Q19_obsplan.txt obsplan_json_8x8/Q18_obsplan.txt obsplan_json_8x8/Q26_obsplan.txt obsplan_json_8x8/Q27_obsplan.txt obsplan_json_8x8/Q28_obsplan.txt obsplan_json_8x8/Q29_obsplan.txt obsplan_json_8x8/Q37_obsplan.txt obsplan_json_8x8/Q36_obsplan.txt obsplan_json_8x8/Q35_obsplan.txt obsplan_json_8x8/Q34_obsplan.txt obsplan_json_8x8/Q42_obsplan.txt obsplan_json_8x8/Q43_obsplan.txt obsplan_json_8x8/Q44_obsplan.txt obsplan_json_8x8/Q45_obsplan.txt
+
+
 
 

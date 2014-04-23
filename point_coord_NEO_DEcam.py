@@ -28,6 +28,7 @@ npasses= 4 # number of times the observing stamp is repeated
 exptime= 60 # exposure time in seconds
 filter='r' # filter selection
 dirout='.' # directory where to output files to
+verbose=False # whether to print the field centers
 
 # Script that outputs sub_ra x sub_dec field position for optimal coverage using
 # DECam@blanco given a cadence center (default 0,0) the cadence starts
@@ -37,10 +38,12 @@ dirout='.' # directory where to output files to
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant=', 'dirout='])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant=', 'dirout=', 'verbose'])
+
 except:
     sys.exit(2)
 for o, a in opts:
+
     if o in ['--raC']:
         try:
             raC=ra2deg(a)
@@ -78,6 +81,9 @@ for o, a in opts:
         quadrant=int(a)
     if o in ['--dirout']:
         dirout=a
+    if o in ['--verbose']:
+        verbose=True
+
 
 fname = dirout+'/'+fname
 
@@ -115,6 +121,14 @@ elif sub_ra == 2:
 
     shifts_ra = numpy.reshape(numpy.array([-step_ra/2]*2 + [step_ra/2]*2), (2,-1)) # both start as the same shifts
     fields = numpy.reshape(numpy.array(range(sub_ra*sub_dec)), (2,-1)) + initfield
+
+    # 20140423 this should be more clear... only works for 2x2
+    nenwswse = 1
+    if nenwswse:
+        a = fields[1][1]
+        fields[1][1]=fields[0,1]
+        fields[0,1]=a
+
 shifts_ra /= numpy.cos(shifts_dec*DTOR) # make sure the delta_ra accounts for sky curvature
 shifts_ra += numpy.ones(numpy.shape(shifts_ra))*raC # Add zeropoint
 
@@ -127,7 +141,16 @@ ddec = lat2dec(shifts_dec)
 
 # order of coverage is SE -> NW
 # change to NE -> SW
-#ddec = ddec[::-1]
+#for i in [0,1]:
+#    ddec[i] = ddec[i][::-1]
+#    dra[i]  = dra[i][::-1]
+
+
+#dra = dra[::-1].T[::-1]
+#ddec= ddec[::-1].T[::-1]
+
+#print dra
+#print ddec
 
 #fig = plt.figure()
 #ax = fig.add_subplot(111)
@@ -163,9 +186,10 @@ for k in range(npasses):
             imname = "Q%dF%dV%d"%(quadrant,fields[i,j],k+1)
             out_l.append(piece%("Field:%2d , imname:%s "%(fields[i,j],imname), imname, filter, dra[i,j], ddec[i,j], exptime))
             fobs.write("%s\t%s\t%s\t%d\n"%(imname, dra[i,j], ddec[i,j], exptime))
-            #if k%npasses==0: # output for xephem visualization
-            #    #print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
-            #    print "F%s,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+
+            if verbose and k%npasses==0: # output for xephem visualization
+                #print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+                print "F%s,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
 fobs.write("%s\t%s\t%s\t%d\n"%("SLEW_QX_QY", dra[i,j], ddec[i,j], 60))
 out = "["+','.join(out_l)+"]" # open and close the script
 
