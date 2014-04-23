@@ -5,8 +5,8 @@
   "expType": "object", 
   "object": "Q46F1V1", 
   "filter": "VR", 
-  "RA": "14:41:55", 
-  "dec": "-19:17:49", 
+  "RA": "14:14:56", 
+  "dec": "-15:21:01", 
   "expTime": 40
  }
 , {
@@ -16,8 +16,8 @@
   "expType": "object", 
   "object": "Q46F2V1", 
   "filter": "VR", 
-  "RA": "14:41:53", 
-  "dec": "-21:14:13", 
+  "RA": "14:14:54", 
+  "dec": "-17:19:25", 
   "expTime": 40
  }
 , {
@@ -27,8 +27,8 @@
   "expType": "object", 
   "object": "Q46F3V1", 
   "filter": "VR", 
-  "RA": "14:48:45", 
-  "dec": "-22:13:25", 
+  "RA": "14:21:36", 
+  "dec": "-18:18:37", 
   "expTime": 40
  }
 , {
@@ -38,8 +38,8 @@
   "expType": "object", 
   "object": "Q46F4V1", 
   "filter": "VR", 
-  "RA": "14:48:42", 
-  "dec": "-20:15:01", 
+  "RA": "14:21:34", 
+  "dec": "-16:20:13", 
   "expTime": 40
  }
 , {
@@ -49,8 +49,8 @@
   "expType": "object", 
   "object": "Q46F1V2", 
   "filter": "VR", 
-  "RA": "14:41:55", 
-  "dec": "-19:17:49", 
+  "RA": "14:14:56", 
+  "dec": "-15:21:01", 
   "expTime": 40
  }
 , {
@@ -60,8 +60,8 @@
   "expType": "object", 
   "object": "Q46F2V2", 
   "filter": "VR", 
-  "RA": "14:41:53", 
-  "dec": "-21:14:13", 
+  "RA": "14:14:54", 
+  "dec": "-17:19:25", 
   "expTime": 40
  }
 , {
@@ -71,8 +71,8 @@
   "expType": "object", 
   "object": "Q46F3V2", 
   "filter": "VR", 
-  "RA": "14:48:45", 
-  "dec": "-22:13:25", 
+  "RA": "14:21:36", 
+  "dec": "-18:18:37", 
   "expTime": 40
  }
 , {
@@ -82,8 +82,8 @@
   "expType": "object", 
   "object": "Q46F4V2", 
   "filter": "VR", 
-  "RA": "14:48:42", 
-  "dec": "-20:15:01", 
+  "RA": "14:21:34", 
+  "dec": "-16:20:13", 
   "expTime": 40
  }
 , {
@@ -93,8 +93,8 @@
   "expType": "object", 
   "object": "Q46F1V3", 
   "filter": "VR", 
-  "RA": "14:41:55", 
-  "dec": "-19:17:49", 
+  "RA": "14:14:56", 
+  "dec": "-15:21:01", 
   "expTime": 40
  }
 , {
@@ -104,8 +104,8 @@
   "expType": "object", 
   "object": "Q46F2V3", 
   "filter": "VR", 
-  "RA": "14:41:53", 
-  "dec": "-21:14:13", 
+  "RA": "14:14:54", 
+  "dec": "-17:19:25", 
   "expTime": 40
  }
 , {
@@ -115,8 +115,8 @@
   "expType": "object", 
   "object": "Q46F3V3", 
   "filter": "VR", 
-  "RA": "14:48:45", 
-  "dec": "-22:13:25", 
+  "RA": "14:21:36", 
+  "dec": "-18:18:37", 
   "expTime": 40
  }
 , {
@@ -126,8 +126,8 @@
   "expType": "object", 
   "object": "Q46F4V3", 
   "filter": "VR", 
-  "RA": "14:48:42", 
-  "dec": "-20:15:01", 
+  "RA": "14:21:34", 
+  "dec": "-16:20:13", 
   "expTime": 40
  }
 , {
@@ -137,8 +137,8 @@
   "expType": "object", 
   "object": "Q46F1V4", 
   "filter": "VR", 
-  "RA": "14:41:55", 
-  "dec": "-19:17:49", 
+  "RA": "14:14:56", 
+  "dec": "-15:21:01", 
   "expTime": 40
  }
 , {
@@ -148,8 +148,8 @@
   "expType": "object", 
   "object": "Q46F2V4", 
   "filter": "VR", 
-  "RA": "14:41:53", 
-  "dec": "-21:14:13", 
+  "RA": "14:14:54", 
+  "dec": "-17:19:25", 
   "expTime": 40
  }
 , {
@@ -159,8 +159,8 @@
   "expType": "object", 
   "object": "Q46F3V4", 
   "filter": "VR", 
-  "RA": "14:48:45", 
-  "dec": "-22:13:25", 
+  "RA": "14:21:36", 
+  "dec": "-18:18:37", 
   "expTime": 40
  }
 , {
@@ -170,8 +170,8 @@
   "expType": "object", 
   "object": "Q46F4V4", 
   "filter": "VR", 
-  "RA": "14:48:42", 
-  "dec": "-20:15:01", 
+  "RA": "14:21:34", 
+  "dec": "-16:20:13", 
   "expTime": 40
  }
 , {
@@ -181,8 +181,8 @@
   "expType": "object", 
   "object": "Q46F1V5", 
   "filter": "VR", 
-  "RA": "14:41:55", 
-  "dec": "-19:17:49", 
+  "RA": "14:14:56", 
+  "dec": "-15:21:01", 
   "expTime": 40
  }
 , {
@@ -192,8 +192,8 @@
   "expType": "object", 
   "object": "Q46F2V5", 
   "filter": "VR", 
-  "RA": "14:41:53", 
-  "dec": "-21:14:13", 
+  "RA": "14:14:54", 
+  "dec": "-17:19:25", 
   "expTime": 40
  }
 , {
@@ -203,8 +203,8 @@
   "expType": "object", 
   "object": "Q46F3V5", 
   "filter": "VR", 
-  "RA": "14:48:45", 
-  "dec": "-22:13:25", 
+  "RA": "14:21:36", 
+  "dec": "-18:18:37", 
   "expTime": 40
  }
 , {
@@ -214,8 +214,8 @@
   "expType": "object", 
   "object": "Q46F4V5", 
   "filter": "VR", 
-  "RA": "14:48:42", 
-  "dec": "-20:15:01", 
+  "RA": "14:21:34", 
+  "dec": "-16:20:13", 
   "expTime": 40
  }
 ]
