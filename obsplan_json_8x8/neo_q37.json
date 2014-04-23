@@ -1,0 +1,221 @@
+[ {
+  "comment": "Field: 1 , imname:Q37F1V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F1V1", 
+  "filter": "VR", 
+  "RA": "14:28:14", 
+  "dec": "-15:21:01", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:Q37F2V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F2V1", 
+  "filter": "VR", 
+  "RA": "14:28:12", 
+  "dec": "-17:19:25", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:Q37F3V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F3V1", 
+  "filter": "VR", 
+  "RA": "14:34:54", 
+  "dec": "-18:18:37", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:Q37F4V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F4V1", 
+  "filter": "VR", 
+  "RA": "14:34:52", 
+  "dec": "-16:20:13", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:Q37F1V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F1V2", 
+  "filter": "VR", 
+  "RA": "14:28:14", 
+  "dec": "-15:21:01", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:Q37F2V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F2V2", 
+  "filter": "VR", 
+  "RA": "14:28:12", 
+  "dec": "-17:19:25", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:Q37F3V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F3V2", 
+  "filter": "VR", 
+  "RA": "14:34:54", 
+  "dec": "-18:18:37", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:Q37F4V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F4V2", 
+  "filter": "VR", 
+  "RA": "14:34:52", 
+  "dec": "-16:20:13", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:Q37F1V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F1V3", 
+  "filter": "VR", 
+  "RA": "14:28:14", 
+  "dec": "-15:21:01", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:Q37F2V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F2V3", 
+  "filter": "VR", 
+  "RA": "14:28:12", 
+  "dec": "-17:19:25", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:Q37F3V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F3V3", 
+  "filter": "VR", 
+  "RA": "14:34:54", 
+  "dec": "-18:18:37", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:Q37F4V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F4V3", 
+  "filter": "VR", 
+  "RA": "14:34:52", 
+  "dec": "-16:20:13", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:Q37F1V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F1V4", 
+  "filter": "VR", 
+  "RA": "14:28:14", 
+  "dec": "-15:21:01", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:Q37F2V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F2V4", 
+  "filter": "VR", 
+  "RA": "14:28:12", 
+  "dec": "-17:19:25", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:Q37F3V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F3V4", 
+  "filter": "VR", 
+  "RA": "14:34:54", 
+  "dec": "-18:18:37", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:Q37F4V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F4V4", 
+  "filter": "VR", 
+  "RA": "14:34:52", 
+  "dec": "-16:20:13", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:Q37F1V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F1V5", 
+  "filter": "VR", 
+  "RA": "14:28:14", 
+  "dec": "-15:21:01", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:Q37F2V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F2V5", 
+  "filter": "VR", 
+  "RA": "14:28:12", 
+  "dec": "-17:19:25", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:Q37F3V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F3V5", 
+  "filter": "VR", 
+  "RA": "14:34:54", 
+  "dec": "-18:18:37", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:Q37F4V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "Q37F4V5", 
+  "filter": "VR", 
+  "RA": "14:34:52", 
+  "dec": "-16:20:13", 
+  "expTime": 40
+ }
+]
