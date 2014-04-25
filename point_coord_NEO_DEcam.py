@@ -14,7 +14,7 @@ DTOR = numpy.pi/180
 # Defaults
 raC = 0.
 decC = 0.
-quadrant =1 # in general (field-1)/4 + 1
+quadrant = "01" # in general (field-1)/4 + 1
 initfield=1
 night = 1
 fname = "neo_n1.json"
@@ -78,7 +78,10 @@ for o, a in opts:
     if o in ['--filter']:
         filter=a
     if o in ['--quadrant']:
-        quadrant=int(a)
+        try:
+            quadrant='%02d'%(int(a)) # quadrant is a string that will help name the 
+        except:
+            quadrant=a
     if o in ['--dirout']:
         dirout=a
     if o in ['--verbose']:
@@ -172,7 +175,9 @@ piece = """ {
 """
 
 # erase night from the names
-fobs = open('%s/Q%02d_obsplan.txt'%(dirout,quadrant),'w')
+##fobs = open('%s/Q%02d_obsplan.txt'%(dirout,quadrant),'w')
+fobs = open('%s/Q%s_obsplan.txt'%(dirout,quadrant),'w')
+
 #fobs = open('%s/xN%d_Q%02d_obsplan.txt'%(dirout,night,quadrant),'w')
 fobs.write("imname\tRA\tDEC\tEXPTIME\n")
 out_l = []
@@ -183,7 +188,8 @@ for k in range(npasses):
         for j in range(sub_ra):
             # add relevant info, erase Night from file names
             #imname = "N%dQ%dF%dV%d"%(night,quadrant,fields[i,j],k+1)
-            imname = "Q%dF%dV%d"%(quadrant,fields[i,j],k+1)
+            ##imname = "Q%dF%dV%d"%(quadrant,fields[i,j],k+1)
+            imname = "Q%sF%dV%d"%(quadrant,fields[i,j],k+1)
             out_l.append(piece%("Field:%2d , imname:%s "%(fields[i,j],imname), imname, filter, dra[i,j], ddec[i,j], exptime))
             fobs.write("%s\t%s\t%s\t%d\n"%(imname, dra[i,j], ddec[i,j], exptime))
 
