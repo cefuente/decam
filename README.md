@@ -10,6 +10,8 @@ right now it runs as:
 python call_coord_NEO_DECam_201404.py --direction south --night 20140422 --raC 14:24:54 --decC -14:22:11 --len_ra 8 --len_dec 8 --exptime 40 --filter VR --npasses 5 > 20140226_neodecam.edb
 
 
+earthtrojans_24:
+python call_coord_NEO_DECam_201404.py --direction south --raC 22:17:25 --decC -10:37:48 --len_ra 4 --len_dec 4 --exptime 40 --filter VR --npasses 5 --dirout earthtrojan_24/ > earthtrojan_24.edb; cp earthtrojan_24.edb ~/.xephem/catalogs/.
 
 
 
@@ -18,4 +20,5 @@ python NEO_DECam_obs_times.py --utcinit '2014-04-22 23:34:26' obsplan_json_8x8/Q
 
 
 
-
+for getting obs_times for earthtrojans
+python NEO_DECam_obs_times.py --utcinit '2014-04-25 09:00:00' earthtrojan_24/Q06_obsplan.txt earthtrojan_24/Q07_obsplan.txt  earthtrojan_24/Q10_obsplan.txt  earthtrojan_24/Q11_obsplan.txt 
