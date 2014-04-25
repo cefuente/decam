@@ -30,6 +30,7 @@ filter='r' # filter selection
 npasses= 5 # number of times the observing stamp is repeated
 dirout='.' # directory where to output files to
 verbose='' # option for point_coordxxxx to print field positions
+nameroot='neo' # string the name of the files will begin with
 
 # Script that outputs sub_ra x sub_dec field position for optimal coverage using
 # DECam@blanco given a cadence center (default 0,0) the cadence starts
@@ -39,7 +40,7 @@ verbose='' # option for point_coordxxxx to print field positions
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=','len_ra=','len_dec=','exptime=','filter=','npasses=','utcinit=','dirout=','verbose'])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=','len_ra=','len_dec=','exptime=','filter=','npasses=','utcinit=','dirout=','verbose','nameroot='])
 except:
     sys.exit(2)
 for o, a in opts:
@@ -88,6 +89,8 @@ for o, a in opts:
         dirout=a
     if o in ['--verbose']:
         verbose='--verbose'
+    if o in ['--nameroot']:
+        nameroot=a
 
 print '# night',night
 
@@ -143,9 +146,11 @@ for i in range(len_ra):
         #initfield = q*sub_ra*sub_dec + 1
         initfield = 1 # keep info in Q and F, Q2F1 (instead of Q2F5)
         q = q+1
-        util = 'python point_coord_NEO_DECam.py --raC %f --decC %f --initfield %d --quadrant %d --fname neo_q%02d.json --direction %s --sub_ra 2 --sub_dec 2 --exptime %d --filter %s --npasses %d --dirout %s %s'%(ras[i][j], decs[i][j], initfield, q, q, direction, exptime, filter, npasses, dirout, verbose)
+        fname = '%s_q%02d.json'%(nameroot, q)
+
+        util = 'python point_coord_NEO_DECam.py --raC %f --decC %f --initfield %d --quadrant %d --fname %s --direction %s --sub_ra 2 --sub_dec 2 --exptime %d --filter %s --npasses %d --dirout %s %s'%(ras[i][j], decs[i][j], initfield, q, fname, direction, exptime, filter, npasses, dirout, verbose)
+        ##util = 'python point_coord_NEO_DECam.py --raC %f --decC %f --initfield %d --quadrant %d --fname neo_q%02d.json --direction %s --sub_ra 2 --sub_dec 2 --exptime %d --filter %s --npasses %d --dirout %s %s'%(ras[i][j], decs[i][j], initfield, q, q, direction, exptime, filter, npasses, dirout, verbose)
         os.system(util)
         print "Q%d,f,%s,%.3f,0,2000"%(q,lon2ra_s(ras[i,j]), decs[i,j])
         #print lon2ra_s(ras[i,j]), decs[i,j]
 os.system('')
-
