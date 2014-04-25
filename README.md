@@ -9,9 +9,9 @@ right now it runs as:
 
 python call_coord_NEO_DECam_201404.py --direction south --night 20140422 --raC 14:24:54 --decC -14:22:11 --len_ra 8 --len_dec 8 --exptime 40 --filter VR --npasses 5 > 20140226_neodecam.edb
 
+L4_0425:
+python point_coord_NEO_DEcam.py --raC 22:21:06.6 --decC -10:16:42 --exptime 40 --quadrant L4_0425 --npasses 5 --sub_ra 3 --sub_dec 3 --direction south --dirout L4_0425 --fname L4_0425.json --verbose > L4_0425/L4_0425.edb ; cp L4_0425/L4_0425.edb ~/.xephem/catalogs/.
 
-earthtrojans_24:
-python call_coord_NEO_DECam_201404.py --direction south --raC 22:17:25 --decC -10:37:48 --len_ra 4 --len_dec 4 --exptime 40 --filter VR --npasses 5 --dirout earthtrojan_24/ > earthtrojan_24.edb; cp earthtrojan_24.edb ~/.xephem/catalogs/.
 
 
 
