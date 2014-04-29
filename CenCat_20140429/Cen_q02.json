@@ -5,8 +5,8 @@
   "expType": "object", 
   "object": "Q02F1V1", 
   "filter": "VR", 
-  "RA": "15:56:31", 
-  "dec": "-08:03:36", 
+  "RA": "14:37:09", 
+  "dec": "-12:52:06", 
   "expTime": 300
  }
 , {
@@ -16,8 +16,8 @@
   "expType": "object", 
   "object": "Q02F2V1", 
   "filter": "VR", 
-  "RA": "15:56:28", 
-  "dec": "-10:00:00", 
+  "RA": "14:37:06", 
+  "dec": "-14:50:30", 
   "expTime": 300
  }
 , {
@@ -27,8 +27,8 @@
   "expType": "object", 
   "object": "Q02F3V1", 
   "filter": "VR", 
-  "RA": "15:56:26", 
-  "dec": "-11:58:23", 
+  "RA": "14:37:02", 
+  "dec": "-16:48:53", 
   "expTime": 300
  }
 , {
@@ -38,8 +38,8 @@
   "expType": "object", 
   "object": "Q02F4V1", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-12:57:36", 
+  "RA": "14:43:42", 
+  "dec": "-17:46:05", 
   "expTime": 300
  }
 , {
@@ -49,8 +49,8 @@
   "expType": "object", 
   "object": "Q02F5V1", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-10:59:11", 
+  "RA": "14:43:42", 
+  "dec": "-15:49:42", 
   "expTime": 300
  }
 , {
@@ -60,8 +60,8 @@
   "expType": "object", 
   "object": "Q02F6V1", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-09:02:48", 
+  "RA": "14:43:42", 
+  "dec": "-13:51:18", 
   "expTime": 300
  }
 , {
@@ -71,8 +71,8 @@
   "expType": "object", 
   "object": "Q02F7V1", 
   "filter": "VR", 
-  "RA": "16:09:24", 
-  "dec": "-08:03:36", 
+  "RA": "14:50:15", 
+  "dec": "-12:52:06", 
   "expTime": 300
  }
 , {
@@ -82,8 +82,8 @@
   "expType": "object", 
   "object": "Q02F8V1", 
   "filter": "VR", 
-  "RA": "16:09:26", 
-  "dec": "-10:00:00", 
+  "RA": "14:50:18", 
+  "dec": "-14:50:30", 
   "expTime": 300
  }
 , {
@@ -93,8 +93,8 @@
   "expType": "object", 
   "object": "Q02F9V1", 
   "filter": "VR", 
-  "RA": "16:09:29", 
-  "dec": "-11:58:23", 
+  "RA": "14:50:22", 
+  "dec": "-16:48:53", 
   "expTime": 300
  }
 , {
@@ -104,8 +104,8 @@
   "expType": "object", 
   "object": "Q02F1V2", 
   "filter": "VR", 
-  "RA": "15:56:31", 
-  "dec": "-08:03:36", 
+  "RA": "14:37:09", 
+  "dec": "-12:52:06", 
   "expTime": 300
  }
 , {
@@ -115,8 +115,8 @@
   "expType": "object", 
   "object": "Q02F2V2", 
   "filter": "VR", 
-  "RA": "15:56:28", 
-  "dec": "-10:00:00", 
+  "RA": "14:37:06", 
+  "dec": "-14:50:30", 
   "expTime": 300
  }
 , {
@@ -126,8 +126,8 @@
   "expType": "object", 
   "object": "Q02F3V2", 
   "filter": "VR", 
-  "RA": "15:56:26", 
-  "dec": "-11:58:23", 
+  "RA": "14:37:02", 
+  "dec": "-16:48:53", 
   "expTime": 300
  }
 , {
@@ -137,8 +137,8 @@
   "expType": "object", 
   "object": "Q02F4V2", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-12:57:36", 
+  "RA": "14:43:42", 
+  "dec": "-17:46:05", 
   "expTime": 300
  }
 , {
@@ -148,8 +148,8 @@
   "expType": "object", 
   "object": "Q02F5V2", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-10:59:11", 
+  "RA": "14:43:42", 
+  "dec": "-15:49:42", 
   "expTime": 300
  }
 , {
@@ -159,8 +159,8 @@
   "expType": "object", 
   "object": "Q02F6V2", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-09:02:48", 
+  "RA": "14:43:42", 
+  "dec": "-13:51:18", 
   "expTime": 300
  }
 , {
@@ -170,8 +170,8 @@
   "expType": "object", 
   "object": "Q02F7V2", 
   "filter": "VR", 
-  "RA": "16:09:24", 
-  "dec": "-08:03:36", 
+  "RA": "14:50:15", 
+  "dec": "-12:52:06", 
   "expTime": 300
  }
 , {
@@ -181,8 +181,8 @@
   "expType": "object", 
   "object": "Q02F8V2", 
   "filter": "VR", 
-  "RA": "16:09:26", 
-  "dec": "-10:00:00", 
+  "RA": "14:50:18", 
+  "dec": "-14:50:30", 
   "expTime": 300
  }
 , {
@@ -192,8 +192,8 @@
   "expType": "object", 
   "object": "Q02F9V2", 
   "filter": "VR", 
-  "RA": "16:09:29", 
-  "dec": "-11:58:23", 
+  "RA": "14:50:22", 
+  "dec": "-16:48:53", 
   "expTime": 300
  }
 , {
@@ -203,8 +203,8 @@
   "expType": "object", 
   "object": "Q02F1V3", 
   "filter": "VR", 
-  "RA": "15:56:31", 
-  "dec": "-08:03:36", 
+  "RA": "14:37:09", 
+  "dec": "-12:52:06", 
   "expTime": 300
  }
 , {
@@ -214,8 +214,8 @@
   "expType": "object", 
   "object": "Q02F2V3", 
   "filter": "VR", 
-  "RA": "15:56:28", 
-  "dec": "-10:00:00", 
+  "RA": "14:37:06", 
+  "dec": "-14:50:30", 
   "expTime": 300
  }
 , {
@@ -225,8 +225,8 @@
   "expType": "object", 
   "object": "Q02F3V3", 
   "filter": "VR", 
-  "RA": "15:56:26", 
-  "dec": "-11:58:23", 
+  "RA": "14:37:02", 
+  "dec": "-16:48:53", 
   "expTime": 300
  }
 , {
@@ -236,8 +236,8 @@
   "expType": "object", 
   "object": "Q02F4V3", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-12:57:36", 
+  "RA": "14:43:42", 
+  "dec": "-17:46:05", 
   "expTime": 300
  }
 , {
@@ -247,8 +247,8 @@
   "expType": "object", 
   "object": "Q02F5V3", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-10:59:11", 
+  "RA": "14:43:42", 
+  "dec": "-15:49:42", 
   "expTime": 300
  }
 , {
@@ -258,8 +258,8 @@
   "expType": "object", 
   "object": "Q02F6V3", 
   "filter": "VR", 
-  "RA": "16:02:57", 
-  "dec": "-09:02:48", 
+  "RA": "14:43:42", 
+  "dec": "-13:51:18", 
   "expTime": 300
  }
 , {
@@ -269,8 +269,8 @@
   "expType": "object", 
   "object": "Q02F7V3", 
   "filter": "VR", 
-  "RA": "16:09:24", 
-  "dec": "-08:03:36", 
+  "RA": "14:50:15", 
+  "dec": "-12:52:06", 
   "expTime": 300
  }
 , {
@@ -280,8 +280,8 @@
   "expType": "object", 
   "object": "Q02F8V3", 
   "filter": "VR", 
-  "RA": "16:09:26", 
-  "dec": "-10:00:00", 
+  "RA": "14:50:18", 
+  "dec": "-14:50:30", 
   "expTime": 300
  }
 , {
@@ -291,8 +291,8 @@
   "expType": "object", 
   "object": "Q02F9V3", 
   "filter": "VR", 
-  "RA": "16:09:29", 
-  "dec": "-11:58:23", 
+  "RA": "14:50:22", 
+  "dec": "-16:48:53", 
   "expTime": 300
  }
 ]
