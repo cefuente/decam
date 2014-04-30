@@ -98,9 +98,15 @@ fname = dirout+'/'+fname
 step_ra  = 1.596 # (5[ccd]*4096[pix/ccd]+4[gaps]*201[pix/gap])*0.27[arcsec/pix]/3600[arcsec/deg]
 step_dec = 1.96  # (12[ccd]*2048[pix/ccd]+10[gaps]*153)*0.27[arcsec/pix]/3600[arcsec/deg]
 
+
 if sub_ra == 3:
     if direction == 1: # north to south
+
+
         shifts_dec = numpy.reshape(numpy.array([-step_dec, 0, step_dec]*sub_ra ), (3,-1)) # three different shifts repeated
+        ## added to make 3x3 match between tiles by swapping n<->s
+        shifts_dec -= step_dec / 2.
+        
         shifts_dec[1] += step_dec/2; shifts_dec[1] = shifts_dec[1][::-1] # add a step_dec and revert order for the middle shift
         shifts_dec += numpy.ones(numpy.shape(shifts_dec))*decC # Add zeropoint
     else: # south to north
@@ -195,7 +201,8 @@ for k in range(npasses):
 
             if verbose and k%npasses==0: # output for xephem visualization
                 #print "f%d,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
-                print "F%s,f,%s,%f,0,2000"%(fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
+                # added dirout to avoid problems with xephem
+                print "d%sF%s,f,%s,%f,0,2000"%(dirout,fields[i,j], dra[i,j], dec2deg(ddec[i,j]))
 fobs.write("%s\t%s\t%s\t%d\n"%("SLEW_QX_QY", dra[i,j], ddec[i,j], 60))
 out = "["+','.join(out_l)+"]" # open and close the script
 
