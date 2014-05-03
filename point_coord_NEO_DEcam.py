@@ -24,6 +24,8 @@ direction = 1 # go from south to north, middle field is a bit north,
 sub_ra = 3 # number of sub_shifts in ra and dec for the sub_cadence
 sub_dec= 3 # this one should not be changed
 
+quadstr= 'Q' # String used to identify the fields in these pointings
+
 npasses= 4 # number of times the observing stamp is repeated
 exptime= 60 # exposure time in seconds
 filter='r' # filter selection
@@ -38,7 +40,7 @@ verbose=False # whether to print the field centers
 #get options
 args=sys.argv[1:]
 try:
-    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant=', 'dirout=', 'verbose'])
+    opts, args=getopt.getopt(args, 'ho:d:',['raC=','decC=','initfield=','fname=','night=','direction=','sub_ra=','sub_dec=', 'npasses=', 'exptime=', 'filter=', 'quadrant=', 'dirout=', 'quadstr=', 'verbose'])
 
 except:
     sys.exit(2)
@@ -84,6 +86,8 @@ for o, a in opts:
             quadrant=a
     if o in ['--dirout']:
         dirout=a
+    if o in ['--quadstr']:
+        quadstr=a
     if o in ['--verbose']:
         verbose=True
 
@@ -182,7 +186,7 @@ piece = """ {
 
 # erase night from the names
 ##fobs = open('%s/Q%02d_obsplan.txt'%(dirout,quadrant),'w')
-fobs = open('%s/Q%s_obsplan.txt'%(dirout,quadrant),'w')
+fobs = open('%s/%s%s_obsplan.txt'%(dirout,quadstr,quadrant),'w')
 
 #fobs = open('%s/xN%d_Q%02d_obsplan.txt'%(dirout,night,quadrant),'w')
 fobs.write("imname\tRA\tDEC\tEXPTIME\n")
@@ -195,7 +199,9 @@ for k in range(npasses):
             # add relevant info, erase Night from file names
             #imname = "N%dQ%dF%dV%d"%(night,quadrant,fields[i,j],k+1)
             ##imname = "Q%dF%dV%d"%(quadrant,fields[i,j],k+1)
-            imname = "Q%sF%dV%d"%(quadrant,fields[i,j],k+1)
+            ###imname = "Q%sF%dV%d"%(quadrant,fields[i,j],k+1)
+            imname = "%s%sF%dV%d"%(quadstr,quadrant,fields[i,j],k+1)
+
             out_l.append(piece%("Field:%2d , imname:%s "%(fields[i,j],imname), imname, filter, dra[i,j], ddec[i,j], exptime))
             fobs.write("%s\t%s\t%s\t%d\n"%(imname, dra[i,j], ddec[i,j], exptime))
 

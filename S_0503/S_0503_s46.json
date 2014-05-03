@@ -1,0 +1,221 @@
+[ {
+  "comment": "Field: 1 , imname:S46F1V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F1V1", 
+  "filter": "VR", 
+  "RA": "15:03:00", 
+  "dec": "-44:55:59", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:S46F4V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F4V1", 
+  "filter": "VR", 
+  "RA": "15:02:50", 
+  "dec": "-46:52:24", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:S46F3V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F3V1", 
+  "filter": "VR", 
+  "RA": "15:12:15", 
+  "dec": "-47:51:35", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:S46F2V1 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F2V1", 
+  "filter": "VR", 
+  "RA": "15:12:05", 
+  "dec": "-45:53:11", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:S46F1V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F1V2", 
+  "filter": "VR", 
+  "RA": "15:03:00", 
+  "dec": "-44:55:59", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:S46F4V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F4V2", 
+  "filter": "VR", 
+  "RA": "15:02:50", 
+  "dec": "-46:52:24", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:S46F3V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F3V2", 
+  "filter": "VR", 
+  "RA": "15:12:15", 
+  "dec": "-47:51:35", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:S46F2V2 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F2V2", 
+  "filter": "VR", 
+  "RA": "15:12:05", 
+  "dec": "-45:53:11", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:S46F1V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F1V3", 
+  "filter": "VR", 
+  "RA": "15:03:00", 
+  "dec": "-44:55:59", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:S46F4V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F4V3", 
+  "filter": "VR", 
+  "RA": "15:02:50", 
+  "dec": "-46:52:24", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:S46F3V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F3V3", 
+  "filter": "VR", 
+  "RA": "15:12:15", 
+  "dec": "-47:51:35", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:S46F2V3 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F2V3", 
+  "filter": "VR", 
+  "RA": "15:12:05", 
+  "dec": "-45:53:11", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:S46F1V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F1V4", 
+  "filter": "VR", 
+  "RA": "15:03:00", 
+  "dec": "-44:55:59", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:S46F4V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F4V4", 
+  "filter": "VR", 
+  "RA": "15:02:50", 
+  "dec": "-46:52:24", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:S46F3V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F3V4", 
+  "filter": "VR", 
+  "RA": "15:12:15", 
+  "dec": "-47:51:35", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:S46F2V4 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F2V4", 
+  "filter": "VR", 
+  "RA": "15:12:05", 
+  "dec": "-45:53:11", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 1 , imname:S46F1V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F1V5", 
+  "filter": "VR", 
+  "RA": "15:03:00", 
+  "dec": "-44:55:59", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 4 , imname:S46F4V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F4V5", 
+  "filter": "VR", 
+  "RA": "15:02:50", 
+  "dec": "-46:52:24", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 3 , imname:S46F3V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F3V5", 
+  "filter": "VR", 
+  "RA": "15:12:15", 
+  "dec": "-47:51:35", 
+  "expTime": 40
+ }
+, {
+  "comment": "Field: 2 , imname:S46F2V5 ",
+  "seqtot": 1, 
+  "seqnum": 1, 
+  "expType": "object", 
+  "object": "S46F2V5", 
+  "filter": "VR", 
+  "RA": "15:12:05", 
+  "dec": "-45:53:11", 
+  "expTime": 40
+ }
+]
